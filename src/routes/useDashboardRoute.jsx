@@ -1,7 +1,5 @@
 import { lazy, useReducer } from "react";
 import { Route, Routes } from "react-router-dom";
-import DasboardReducer from "../reducers/DashboardReducer";
-import { dashboardOptions } from "../utils/constants";
 
 //Util Components
 const NavBar = lazy(() => import("../components/dashboard/NavBar"));
@@ -15,7 +13,6 @@ const Others = lazy(() => import("../pages/dashboard/Others"));
 
 function useDashboardRoute() {
 
-    const {} = useReducer(DasboardReducer, dashboardOptions[0])
 
   return (
     <main className="h-screen w-screen flex">
