@@ -13,8 +13,8 @@ function DasboardReducer(state, action) {
           together the state. and return true to break out of loop (some),
           else return false and continue to loop through the elements
         */
-        if(element.type === action.payload.type){
-            payload = { ...action.payload };
+        if(element.type === action.type){
+            payload = { ...action };
             return true;
         }
         return false

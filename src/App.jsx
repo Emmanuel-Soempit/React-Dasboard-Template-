@@ -26,7 +26,7 @@ function App() {
 
         {/* Dashboard Routes using the dashboard hook */}
         {/* Other Routes can go here using thier hook e.g adminDashboardRoute */}
-        <Route path="/dashboard" element={<DashboardRoutes/>}/>
+        <Route path="/dashboard/*" element={<DashboardRoutes/>}/>
         </Routes>
       </Router>
     </Suspense>
